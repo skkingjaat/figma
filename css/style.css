@@ -1,0 +1,1344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+button{
+    outline: none;
+}
+/* .next-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.next-page button{
+    margin: 100px; 
+    width: 150px; 
+    height: 40px; 
+    border: 1px solid #0c8cE9;
+} */
+.wireframing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.wireframing-section {
+    width: 45%;
+    height: 100%;
+    padding-left: 40px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-color: black;
+    position: relative;
+}
+
+.wireframing-section h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.wireframing-section p {
+    width: 450px;
+    color: #a1a1a1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.wireframing-section p span {
+    color: #fff;
+}
+
+.wireframing-section button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #0C8CE9;
+}
+.wireframing-section button:hover{
+    color: #0C8CE9;
+    background-color: black;
+    border: 2px solid #0C8CE9;
+}
+.wireframing .ellipse,
+.polygon,
+.rectangle,
+.background-square,
+.background-rectangle {
+    position: absolute;
+}
+
+.ellipse {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background: #F24E1E;
+    bottom: 11.5%;
+    right: 16.3%;
+}
+
+.polygon {
+    width: 112px;
+    height: 98px;
+    background: #0ACF83;
+    transform: rotate(-45deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    bottom: 4%;
+    right: 46%;
+}
+
+.rectangle {
+    width: 86px;
+    height: 86px;
+    background: #A259FF;
+    bottom: 0;
+    right: 29%;
+}
+
+.background-rectangle {
+    Width: 100px;
+    Height: 250px;
+    border: 3px solid #333;
+    transform: rotate(-35deg);
+    right: 17%;
+    bottom: -5%;
+    z-index: -1;
+}
+
+.background-square {
+    Width: 120px;
+    Height: 250px;
+    border: 3px solid #333;
+    transform: rotate(5.78deg);
+    right: 48%;
+    bottom: -15%;
+    position: absolute;
+    z-index: -1;
+}
+
+.overview {
+    width: 55%;
+    height: 100%;
+    padding-left: 30px;
+    background-color: #f0f0f0;
+}
+
+.overview h1 {
+    font-Size: 35px;
+    font-Weight: 700;
+    margin-top: 60px;
+}
+
+.overview p {
+    width: 100%;
+    color: black;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.overview h2 {
+    font-Size: 20px;
+    font-Weight: 700;
+    margin-top: 20px;
+}
+
+.overview .h2-p {
+    margin-top: 10px;
+}
+
+.blog {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.overview .blog .card {
+    width: 160px;
+    height: 100px;
+    display: flex;
+    background-color: white;
+}
+
+.overview .blog .card .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overview .blog .card .content h1 {
+    font-size: 8px;
+    font-weight: 500;
+    color: black;
+    margin-top: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.overview .blog .card .content button {
+    width: 60px;
+    height: 15px;
+    color: white;
+    background-color: #0C8CE9;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 8px;
+}
+
+.overview .blog .card .empty-section {
+    width: 50%;
+    height: 100%;
+    background-color: #E6E6E6;
+}
+
+
+
+.overview .blog .card1 {
+    width: 160px;
+    height: 100px;
+    background-color: white;
+}
+
+.overview .blog .card1 .content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overview .blog .card1 .content h1 {
+    font-size: 8px;
+    font-weight: 500;
+    color: black;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+.overview .blog .card1 .content button {
+    width: 60px;
+    height: 15px;
+    color: white;
+    background-color: #0C8CE9;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 8px;
+}
+
+.overview .blog .card1 .empty-section {
+    width: 100%;
+    height: 30%;
+    background-color: #E6E6E6;
+}
+
+
+
+.overview .blog .card2 {
+    width: 160px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E6E6;
+}
+
+.overview .blog .card2 .logo {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #0C8CE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.overview .blog .card2 .logo .triangle {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    transform: rotate(90deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.overview .blog .card2 h1 {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0px;
+    margin-top: 10px;
+
+}
+
+.overview .blog .card2 button {
+    width: 50px;
+    height: 15px;
+    color: white;
+    background-color: #0C8CE9;
+    font-size: 8px;
+}
+
+
+
+.card3 {
+    width: 16   0px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card3 h1 {
+    font-size: 6px;
+    font-weight: 400;
+    color: black;
+    margin: 0px;
+}
+
+.card3 .blog1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card3 .blog1 .box{
+    width: 80px;
+    height: 35px;
+}
+
+.card3 .blog1 .box h2{
+    font-size: 5px;
+    font-weight: 700;
+    color: black;
+    margin: 0px;
+}
+
+.card3 .blog1 .box p{
+    font-size: 4px;
+    font-weight: 200;
+    color: #333;
+    margin: 0px;
+}
+
+.card3 .blog1 .box button{
+    width: 20px;
+    height: 5px;
+    color: white;
+    background-color: #0C8CE9;
+    font-size: 2px;
+    margin: 0px;
+    position: absolute;
+}
+.card3 #blog2{
+    margin: 0px;
+}
+
+
+
+
+.blog-part{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+.blog-part .box1{
+    width: 160px;
+    height: 115px;
+    background-color: white;
+    padding-left: 5px;
+}
+.blog-part .box1 h1{
+    width: 70%;
+    font-size: 5px;
+    font-weight: 700;
+    color: black;
+    margin-top: 5px;
+}
+.blog-part .box1 .blog-section{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.blog-part .box1 .blog-section .content{
+    width: 45%;
+    height: 90%;
+}
+.blog-part .box1 .blog-section .content .img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+}
+.blog-part .box1 .blog-section .content h3{
+    font-size: 5px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.blog-part .box1 .blog-section .content p{
+    font-size: 3px;
+    margin-top: 5px;
+}
+.blog-part .box1 .blog-section .content button{
+    width: 20px;
+    height: 10px;
+    color: white;
+    background-color: #0C8CE9;
+    font-size: 3px;
+    margin: 0px;
+    position: absolute;
+}
+
+
+.blog-part .box2{
+    width: 160px;
+    height: 100px;
+    color: white;
+    background-color: white;
+    padding-left: 5px;
+}
+.blog-part .box2 h1{
+    width: 70%;
+    font-size: 5px;
+    font-weight: 700;
+    color: black;
+    margin-top: 5px;
+
+}
+.blog-part .box2 .blog-section{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+.blog-part .box2 .blog-section .content{
+    width: 30%;
+    height: 90%;
+}
+.blog-part .box2 .blog-section .content .img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+}
+.blog-part .box2 .blog-section .content h3{
+    font-size: 4.5px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: black;
+}
+.blog-part .box2 .blog-section .content p{
+    font-size: 3px;
+    margin-top: 5px;
+}
+.blog-part .box2 .blog-section .content button{
+    width: 20px;
+    height: 10px;
+    color: #0C8CE9;
+    font-size: 5px;
+    margin: 2px;
+    position: absolute;
+}
+
+
+.blog-part .box3{
+    width: 160px;
+    height: 130px;
+    color: white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-part .box3 h1{
+    font-size: 5px;
+    font-weight: 700;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+}
+.blog-part .box3 p{
+    font-size: 3px;
+    margin-top: 4px;
+    text-align: center;
+}
+.blog-part .box3 .blog-section{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+.blog-part .box3 .blog-section div{
+    width: 80%;
+}
+.blog-part .box3 .blog-section div .content h3{
+    font-size: 4.5px;
+    font-weight: 600;
+    margin-top: 3px;
+    color: black;
+}
+.blog-part .box3 .blog-section div .content p{
+    font-size: 3px;
+    margin-top: 3px;
+    text-align: left;
+}
+.blog-part .box3 .blog-section .empty-section{
+    width: 60%;
+    height: 90%;
+    background-color: #E6E6E6;
+}
+
+
+.blog-part .box4{
+    width: 160px;
+    height: 130px;
+    color: white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-part .box4 h1{
+    font-size: 5px;
+    font-weight: 700;
+    color: black;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 12px;
+}
+.blog-part .box4 p{
+    font-size: 3px;
+    margin-top: 4px;
+    text-align: left;
+    padding-left: 12px;
+}
+.blog-part .box4 .blog-section{
+    width: 100%;
+    height: 70%;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+.blog-part .box4 .blog-section div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-part .box4 .blog-section div .content{
+    width: 48%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E6E6E6;
+}
+.blog-part .box4 .blog-section div .content .text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.blog-part .box4 .blog-section div .content .text h3{
+    font-size: 4.5px;
+    font-weight: 600;
+    padding-left: 5px;
+    color: black;
+}
+.blog-part .box4 .blog-section div .content .text p{
+    font-size: 3px;
+    margin: 0px;
+    padding-left: 5px;
+    text-align: left;
+}
+.blog-part .box4 .blog-section div .content .empty-section{
+    width: 100%;
+    height: 60%;
+    background-color: #E6E6E6;
+}
+
+
+.last-blog{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+}
+.last-blog .box1{
+    width: 160px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.last-blog .box1 h1{
+    font-size: 4px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    margin-top: 0px;
+    margin: 0px;
+    padding-left: 2px;
+}
+.last-blog .box1 p{
+    font-size: 3px;
+    margin-top: 5px;
+    padding-left: 2px;
+}
+.last-blog .box1 .card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.last-blog .box1 .card .content{
+    width: 30%;
+    height: 40px;
+}
+.last-blog .box1 .card .content .empty-section{
+    width: 100%;
+    height: 70%;
+    background-color: #E6E6E6;
+}
+.last-blog .box1 .card .content .text{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.last-blog .box1 .card .content .text h2{
+    font-size: 3.5px;
+    font-weight: 500;
+    text-align: center;
+    margin: 3px;
+}
+.last-blog .box2{
+    position: relative;
+    top: -15px;
+    width: 160px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.last-blog .box2 h1{
+    font-size: 4px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    margin-top: 0px;
+    margin: 0px;
+    padding-left: 2px;
+}
+.last-blog .box2 p{
+    font-size: 3px;
+    margin-top: 5px;
+    padding-left: 2px;
+}
+.last-blog .box2 .left-card{
+    width: 45%;
+    margin-top: 10px;
+}
+.last-blog .box2 .left-card .content{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.last-blog .box2 .left-card .content .empty-section{
+    width: 25%;
+    height: 100%;
+    background-color: #E6E6E6;
+}
+.last-blog .box2 .right-card {
+    width: 45%;
+    height: 100%;
+}
+.last-blog .box2 .right-card .empty-section{
+    width: 100%;
+    height: 36%;
+    background-color: #E6E6E6;
+    margin-top: 8px;
+}
+.last-blog .box2 .right-card .content{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.right-card .content h2{
+    width: 90%;
+    font-size: 5px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.right-card .content p{
+    width: 90%;
+    font-size: 3px;
+    margin-top: 0px;
+}
+
+
+.last-blog .box3{
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    top: 30px;
+}
+.last-blog .box3 h2{
+    font-size: 5px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
+}
+.last-blog .box3 p{
+    width: 80%;
+    font-size: 3px;
+    margin-top: 5px;
+    text-align: center;
+    margin: auto;
+}
+.last-blog .box3 .card{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+}
+.last-blog .box3 .card .empty-section{
+    width: 20%;
+    height: 100%;
+    background-color: #E6E6E6;
+} 
+
+
+.last-blog .box4{
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    top: 30px;
+}
+.last-blog .box4 h2{
+    font-size: 5px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
+}
+.last-blog .box4 p{
+    width: 80%;
+    font-size: 3px;
+    margin-top: 5px;
+    text-align: center;
+    margin: auto;
+}
+.last-blog .box4 .card{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+}
+.last-blog .box4 .card h2{
+    width: 100%;
+    text-align: center;
+} 
+
+
+
+/* index1 pages */
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+header .menu .logo{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+header .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu li{
+    margin-left: 40px;
+    color: #0C8CE9;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+header .buttons{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .buttons button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+    text-align: center;
+}
+.login{
+    background-color: transparent;
+    color: #0C8CE9;
+}
+.register{
+    background-color: #0C8CE9;
+    color: white;
+}
+
+.community-photo{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
+}
+.community-photo iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.community-photo iframe{
+    z-index: 20;
+}
+.community-photo .button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0C8CE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 200px;
+}
+.community-photo .button .play{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.community-photo h1{
+    font-size: 30px;
+    margin-top: 400px;
+    color: white;
+}
+.community-photo button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+
+.snap-photos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.snap-photos h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    width: 90%;
+}
+.snap-photos .box{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.snap-photos .box .card{
+    width: 45%;
+    margin-top: 50px;
+}
+.snap-photos .box .card h1{
+    font-size: 15px;
+    font-weight: 700;
+}
+.snap-photos .box .card p{
+    margin-top: 20px;
+}
+.snap-photos .box .card button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.sed-ut{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.sed-ut .left-box{
+    width: 45%;
+    height: 100%;
+    background-color: #E6E6E6;
+}
+.sed-ut .right-content{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+.sed-ut .right-content h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+.sed-ut .right-content p{
+    margin-top: 30px;
+}
+
+
+.sed-ut-down{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a1a1a1;
+    margin-top: 100px;
+}
+.sed-ut-down .right-box{
+    width: 45%;
+    height: 90%;
+    background-color: #E6E6E6;
+    margin-right: 50px;
+    margin: auto;
+}
+.sed-ut-down .left-content{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.sed-ut-down .left-content h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+.sed-ut-down .left-content p{
+    margin-top: 30px;
+}
+
+.good-company{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.good-company h1{
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+.good-company p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.good-company .card{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.good-company .card .box{
+    width: 20%;
+    height: 100%;
+    background-color: #E6E6E6;
+}
+
+
+.join-today{
+    width: 100%;
+    height: 40vh;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-today .left-content{
+    width: 65%;
+}
+.join-today .left-content p{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+}
+.join-today .right-buttons{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.join-today .right-buttons button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+
+footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .photo{
+    width: 90%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+footer .photo .menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.photo .menu li{
+    color: black;
+}
+.photo .logo{
+    width: 40%;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+footer .images{
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 50px;
+}
+footer .images .img{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+footer .images .img img{
+    width: 70px;
+    height: 70px;
+    background-color: #E6E6E6;
+    border-radius: 50%;
+    text-align: center;
+}
+.images .text{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* NAVIGation */
+
+.first-header{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.second-header{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.third-header{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.fourth-header{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.first-header .logo{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.second-header .logo{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 50px;
+}
+.third-header .menu .logo{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.fourth-header .logo{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu li{
+    margin-left: 40px;
+    color: #0C8CE9;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.fourth-header .menu{
+    margin-right: 50px;
+}
+.first-header .button{
+    margin-right: 50px;
+}
+.second-header  .menu .button{
+    margin-right: 50px;
+}
+.third-header .button{
+    margin-right: 50px;
+}
+.first-header .button button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+}
+.second-header .button button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+}
+.third-header .button button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #0C8CE9;
+    font-weight: 500;
+}
+
+
+
+/* HERO */
+
+.largest-community{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: white;
+}
+.largest-community .left-content{
+    width: 50%;
+    height: 90%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.largest-community .left-content h1{
+    font-size: 30px;
+    font-weight: 400;
+    width: 90%;
+}
+.largest-community .left-content button{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+}
+.largest-community .right-section{
+    width: 50%;
+    height: 90%;
+    background-color: #E6E6E6;
+}
+.largest-community-photo{
+    width: 100%;
+    height: 90vh;
+    margin-top: 50px;
+}
+.largest-community-photo .left-content{
+    width: 100%;
+    height: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.largest-community-photo .left-content h1{
+    font-size: 30px;
+    font-weight: 400;
+    width: 90%;
+}
+.largest-community-photo .left-content button{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+}
+.largest-community-photo .right-section{
+    width: 100%;
+    height: 50%;
+    background-color: #E6E6E6;
+}
+
+
+/* SIGN UP */
+
+.signup{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signup h1{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+.signup p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.sign-up{
+    width: 40%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #E6E6E6;
+    margin-top: 30px;    
+}
+.sign-up h1{
+    font-size: 25px;
+    width: 90%;
+}
+.sign-up .name{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.sign-up .name input{
+    width: 49%;
+}
+.sign-up input{
+    width: 90%;
+    margin-top: 20px;
+}
+.sign-up .button{
+    width: 90%;
+}
+.sign-up button{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+}
